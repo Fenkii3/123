@@ -1,5 +1,5 @@
 cd /var/www/source
 
-git add .
-git commit -m "$(date)"
-git push -u origin main
+git add . >> /var/log/projekt/github.log 2>&1
+git commit -m "$(date)" >> /var/log/projekt/github.log 2>&1
+git push -u origin main >> /var/log/projekt/github.log 2>&1
